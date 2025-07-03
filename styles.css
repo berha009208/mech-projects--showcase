@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #91c2e3;
+  color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* Content */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.project {
+  background: white;
+  border-left: 6px solid #0077b6;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: scale(1.01);
+}
+
+.project h2 {
+  color: #004080;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Button */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.toggle-btn:hover {
+  background: #0066cc;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+}
+
+body.dark header {
+  background: linear-gradient(to right, #001f33, #003366);
+  color: white;
+}
+
+body.dark .project {
+  background: #2a2a2a;
+  border-left-color: #3399ff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark a {
+  color: #66ccff;
+}
+
+body.dark .toggle-btn {
+  background: #222;
+  color: #ccc;
+}

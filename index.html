@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compact Air Compressor System</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Dark mode toggle -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button onclick="toggleDarkMode()" class="toggle-btn">
+    <i class="fas fa-moon"></i> Toggle Dark Mode
+  </button>
+
+  <header>
+    <h1>Mechanical Engineering Project Showcase</h1>
+    <p>Compact Air Compressor System Design| By Ariyam Berhe</p>
+  </header>
+
+  <main>
+    <section class="project" data-aos="fade-up">
+      <h2><i class="fas fa-gears"></i> Project Overview</h2>
+      <p>
+        This project involved the design and testing of a compact, low-power air compressor system for general applications.
+        While a bicycle tyre was used as an analogy, the design focused on broader use cases such as portability, reliability, and efficient performance.
+      </p>
+    </section>
+
+    <section class="project" data-aos="fade-up">
+      <h2><i class="fas fa-tools"></i> Design Features</h2>
+      <ul>
+        <li><strong>CAD Modeling:</strong> SolidWorks model with piston-cylinder + crank-slider mechanism.</li>
+        <li><strong>Manufacturing:</strong> 3D printed in Onyx — strength + airflow integration.</li>
+        <li><strong>Sealing:</strong> Dynamic & static seals to minimize leakage.</li>
+        <li><strong>Thermodynamics:</strong> Work analysis using adiabatic/isothermal models.</li>
+        <li><strong>Testing:</strong> Achieved 0.82 bar @ 15V with suggestions for improvements.</li>
+      </ul>
+    </section>
+
+    <section class="project" data-aos="fade-up">
+      <h2><i class="fas fa-calculator"></i> Engineering Analysis</h2>
+      <p>
+        Compression work was modeled using:
+        <ul>
+          <li>Adiabatic</li>
+          <li>Work</li>
+        </ul>
+        Python calculations showed energy use ~1.75 J per stroke — good efficiency for small motor operation.
+      </p>
+    </section>
+
+    <section class="project" data-aos="fade-up">
+      <h2><i class="fas fa-wrench"></i> Testing & Improvements</h2>
+      <ul>
+        <li>Fixed issues with shaft misalignment and baseplate deformation.</li>
+        <li>Redesigned motor-piston alignment and valve thread quality.</li>
+        <li>Future aim: consistent 1 bar pressure with minimal energy loss.</li>
+      </ul>
+    </section>
+    
+    <section class="project no-border" data-aos="fade-up">
+      <h3>Compressor Model</h3>
+      <img src="images/images/figure4.png" alt="CAD model of compressor" width="250">
+      <p><strong>Figure 1:</strong> Compressor testing setup observed during pressure trials.</p>
+    </section>
+    
+      
+      
+
+    <section class="project" data-aos="fade-up">
+      <h2><i class="fas fa-lightbulb"></i> Lessons Learnt</h2>
+      <p>
+        This project sharpened my skills in engineering design, simulation, and validation. I learned how to model real-world
+        systems in CAD, use thermodynamic calculations to size components, and iterate based on test feedback.
+      </p>
+    </section>
+  </main>
+  <section class="project no-border" data-aos="fade-up">
+    <h2><i class="fas fa-upload"></i> Submit Your Project</h2>
+    <form>
+      <label for="upload">Upload your report:</label><br><br>
+      <input type="file" id="upload" name="upload"><br><br>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+  
+
+  <!-- AOS Init -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
